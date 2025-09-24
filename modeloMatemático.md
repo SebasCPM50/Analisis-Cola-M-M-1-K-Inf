@@ -81,4 +81,64 @@ $$
 
 ## Notas adicionales  
 - $P_K$ indica la probabilidad de **bloqueo** (sistema lleno).  
-- $\lambda (1 - P_K)$ representa el **flujo real de llegadas atendidas**, ya que descarta a los clientes rechazados.  
+- $\lambda (1 - P_K)$ representa el **flujo real de llegadas atendidas**, ya que descarta a los clientes rechazados.
+---
+
+
+## Resultados esperados teóricos
+
+A continuación se muestran los valores teóricos esperados para tres configuraciones diferentes del sistema M/M/1/K/∞, usando la versión sin bloqueo (K → ∞), ya que se compara contra NetLogo que no tiene límite de capacidad.
+
+### 🔹 Simulación 1: Baja carga (ρ = 0.5)
+
+- **λ = 0.5**
+- **μ = 1.0**
+- **ρ = λ / μ = 0.5**
+
+\[
+\begin{align*}
+N_s &= \frac{\rho}{1 - \rho} = \frac{0.5}{1 - 0.5} = 1.0 \\
+T_s &= \frac{1}{\mu - \lambda} = \frac{1}{1 - 0.5} = 2.0 \\
+N_w &= \frac{\rho^2}{1 - \rho} = \frac{0.25}{0.5} = 0.5 \\
+T_w &= \frac{\rho}{\mu - \lambda} = \frac{0.5}{0.5} = 1.0 \\
+\end{align*}
+\]
+
+---
+
+### 🔹 Simulación 2: Carga media (ρ ≈ 0.639)
+
+- **λ = 0.90**
+- **μ ≈ 1.408** (porque tiempo de servicio es 0.71 ticks)
+- **ρ ≈ 0.639**
+
+\[
+\begin{align*}
+N_s &\approx \frac{0.639}{1 - 0.639} \approx 1.768 \\
+T_s &\approx \frac{1}{1.408 - 0.9} \approx 1.967 \\
+N_w &\approx \frac{0.639^2}{1 - 0.639} \approx 1.131 \\
+T_w &\approx \frac{0.639}{1.408 - 0.9} \approx 1.257 \\
+\end{align*}
+\]
+
+---
+
+### 🔹 Simulación 3: Alta carga (ρ ≈ 0.855)
+
+- **λ = 0.95**
+- **μ ≈ 1.111** (porque tiempo de servicio es 0.90 ticks)
+- **ρ ≈ 0.855**
+
+\[
+\begin{align*}
+N_s &\approx \frac{0.855}{1 - 0.855} \approx 5.896 \\
+T_s &\approx \frac{1}{1.111 - 0.95} \approx 6.211 \\
+N_w &\approx \frac{0.855^2}{1 - 0.855} \approx 5.054 \\
+T_w &\approx \frac{0.855}{1.111 - 0.95} \approx 5.264 \\
+\end{align*}
+\]
+
+---
+
+Estos valores teóricos permiten validar los resultados obtenidos mediante la simulación en NetLogo. Las diferencias menores entre teoría y práctica se deben a la variabilidad inherente a los modelos estocásticos y al tiempo finito de simulación.
+
