@@ -39,7 +39,7 @@ $$
 
 ---
 
-## Número esperado de clientes en el sistema (Nₛ)  
+## Número esperado de clientes en el sistema (Ns)  
 
 $$
 N_s = \frac{\rho \left[1 - (K+1)\rho^K + K\rho^{K+1}\right]}{(1 - \rho)(1 - \rho^{K+1})}
@@ -47,7 +47,7 @@ $$
 
 ---
 
-## Tiempo promedio en el sistema (Tₛ)  
+## Tiempo promedio en el sistema (Ts)  
 
 $$
 T_s = \frac{N_s}{\lambda (1 - P_K)}
@@ -57,7 +57,7 @@ donde $\lambda (1 - P_K)$ corresponde a la **tasa de llegadas efectivas** (solo 
 
 ---
 
-## Número esperado de clientes en cola (N~w)  
+## Número esperado de clientes en cola (Nw)  
 
 $$
 N_w = N_s - (1 - P_0)
@@ -71,7 +71,7 @@ $$
 
 ---
 
-## Tiempo promedio de espera en cola (T~𝑤)  
+## Tiempo promedio de espera en cola (Tw)  
 
 $$
 T_w = \frac{N_w}{\lambda (1 - P_K)}
