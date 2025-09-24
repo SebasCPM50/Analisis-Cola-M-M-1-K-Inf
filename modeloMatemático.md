@@ -93,11 +93,11 @@ A continuación se muestran los valores teóricos esperados para tres configurac
 
 ---
 
-### 🔹 Simulación 1: Baja carga (ρ = 0.5)
+### Simulación 1: Baja carga (ρ = 0.5)
 
-- \( \lambda = 0.5 \)
-- \( \mu = 1.0 \)
-- \( \rho = \lambda / \mu = 0.5 \)
+- **λ = 0.5**
+- **μ = 1.0**
+- **ρ = λ / μ = 0.5**
 
 $$
 \begin{align*}
@@ -110,11 +110,11 @@ $$
 
 ---
 
-### 🔹 Simulación 2: Carga media (ρ ≈ 0.639)
+### Simulación 2: Carga media (ρ ≈ 0.639)
 
-- \( \lambda = 0.90 \)
-- \( \mu \approx 1.408 \) (porque tiempo de servicio es 0.71)
-- \( \rho = \lambda / \mu \approx 0.639 \)
+- **λ = 0.90**
+- **μ ≈ 1.408** (porque tiempo de servicio es 0.71 ticks)
+- **ρ ≈ 0.639**
 
 $$
 \begin{align*}
@@ -127,11 +127,11 @@ $$
 
 ---
 
-### 🔹 Simulación 3: Alta carga (ρ ≈ 0.855)
+### Simulación 3: Alta carga (ρ ≈ 0.855)
 
-- \( \lambda = 0.95 \)
-- \( \mu \approx 1.111 \) (porque tiempo de servicio es 0.90)
-- \( \rho \approx 0.855 \)
+- **λ = 0.95**
+- **μ ≈ 1.111** (porque tiempo de servicio es 0.90 ticks)
+- **ρ ≈ 0.855**
 
 $$
 \begin{align*}
