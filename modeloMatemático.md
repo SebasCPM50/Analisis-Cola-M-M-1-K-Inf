@@ -79,6 +79,6 @@ $$
 
 ---
 
-## Comentario final  
+## Notas adicionales  
 - $P_K$ indica la probabilidad de **bloqueo** (sistema lleno).  
 - $\lambda (1 - P_K)$ representa el **flujo real de llegadas atendidas**, ya que descarta a los clientes rechazados.  
