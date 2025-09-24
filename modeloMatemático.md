@@ -57,7 +57,7 @@ donde $\lambda (1 - P_K)$ corresponde a la **tasa de llegadas efectivas** (solo 
 
 ---
 
-## Número esperado de clientes en cola (N𝑤)  
+## Número esperado de clientes en cola (N~w)  
 
 $$
 N_w = N_s - (1 - P_0)
@@ -71,7 +71,7 @@ $$
 
 ---
 
-## Tiempo promedio de espera en cola (T𝑤)  
+## Tiempo promedio de espera en cola (T~𝑤)  
 
 $$
 T_w = \frac{N_w}{\lambda (1 - P_K)}
